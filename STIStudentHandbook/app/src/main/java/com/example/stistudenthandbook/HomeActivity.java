@@ -11,7 +11,7 @@ import android.widget.TextView;
 
  public class HomeActivity extends AppCompatActivity {
 
-    ImageButton CalcuIbtn, HistoryIbtn, HimnIBtn, WebIbtn;
+    ImageButton CalcuIbtn, HistoryIbtn, HimnIBtn, WebIbtn, VideoIbtn;
     TextView Nametxt;
 
     @Override
@@ -24,6 +24,7 @@ import android.widget.TextView;
         HimnIBtn = findViewById(R.id.ibtnSTIHimn);
         Nametxt = findViewById(R.id.txtName);
         WebIbtn = findViewById(R.id.ibtnWebsite);
+        VideoIbtn = findViewById(R.id.ibtnVideo);
         String Name = getIntent().getStringExtra("newname");
         Nametxt.setText(Name);
 
@@ -57,6 +58,13 @@ import android.widget.TextView;
                 Intent intentWebsite = new Intent(Intent.ACTION_VIEW);
                 intentWebsite.setData(Uri.parse(url));
                 startActivity(intentWebsite);
+            }
+        });
+        VideoIbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentvideo = new Intent (HomeActivity.this, VideoActivity.class);
+                startActivity(intentvideo);
             }
         });
     }

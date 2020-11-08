@@ -34,7 +34,7 @@
         android:layout_marginStart="15dp"
         android:background="#FFEB3B"
         android:backgroundTint="#FFEB3B"
-        android:src="@drawable/ic_history"
+        android:src="@drawable/ic_sti_history"
         app:layout_constraintBottom_toBottomOf="@+id/ibtnCalcu"
         app:layout_constraintStart_toEndOf="@+id/ibtnCalcu"
         app:layout_constraintTop_toTopOf="@+id/ibtnCalcu" />
@@ -45,7 +45,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="15dp"
         android:background="#FFEB3B"
-        android:src="@drawable/ic_music"
+        android:src="@drawable/ic_sti_hymn"
         app:layout_constraintBottom_toBottomOf="@+id/ibtnHistory"
         app:layout_constraintStart_toEndOf="@+id/ibtnHistory"
         app:layout_constraintTop_toTopOf="@+id/ibtnHistory"
@@ -74,5 +74,17 @@
         app:layout_constraintBottom_toBottomOf="@+id/ibtnSTIHimn"
         app:layout_constraintStart_toEndOf="@+id/ibtnSTIHimn"
         app:layout_constraintTop_toTopOf="@+id/ibtnSTIHimn"
-        app:srcCompat="@drawable/ic_website_sti" />
+        app:srcCompat="@drawable/ic_website_icon" />
+
+    <ImageButton
+        android:id="@+id/ibtnVideo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:background="#FFEB3B"
+        android:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtnWebsite"
+        app:layout_constraintStart_toEndOf="@+id/ibtnWebsite"
+        app:layout_constraintTop_toTopOf="@+id/ibtnWebsite"
+        app:srcCompat="@drawable/ic_video" />
 </androidx.constraintlayout.widget.ConstraintLayout>
