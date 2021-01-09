@@ -11,14 +11,14 @@ import android.widget.TextView;
 
  public class HomeActivity extends AppCompatActivity {
 
-    ImageButton CalcuIbtn, HistoryIbtn, HimnIBtn, WebIbtn, VideoIbtn;
+    ImageButton CalcuIbtn, HistoryIbtn, HimnIBtn, WebIbtn, VideoIbtn, QRCGbtn;
     TextView Nametxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        QRCGbtn = findViewById(R.id.ibtnQRCG);
         CalcuIbtn = findViewById(R.id.ibtnCalcu);
         HistoryIbtn = findViewById(R.id.ibtnHistory);
         HimnIBtn = findViewById(R.id.ibtnSTIHimn);
@@ -65,6 +65,13 @@ import android.widget.TextView;
             public void onClick(View v) {
                 Intent intentvideo = new Intent (HomeActivity.this, VideoActivity.class);
                 startActivity(intentvideo);
+            }
+        });
+        QRCGbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentqrcg = new Intent(HomeActivity.this, QRCodeGenerator.class);
+                startActivity(intentqrcg);
             }
         });
     }

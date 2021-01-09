@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_newlogo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoActivity"></activity>
+        <activity android:name=".QRCodeGenerator"></activity>
+        <activity android:name=".VideoActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".STIHimnActivity" />
         <activity android:name=".HistoryActivity" />
